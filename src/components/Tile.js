@@ -2,7 +2,9 @@ import React from "react";
 
 function Tile({ value, onClick }) {
     const getImageSource = () => {
-        return value === "X" ? "/images/x-image.png" : "/images/o-image.png";
+        const src = value === "X" ? "/images/x-image.png" : "/images/o-image.png";
+        console.log("Image source:", src); // Debugging line
+        return src;
     };
 
     return (
